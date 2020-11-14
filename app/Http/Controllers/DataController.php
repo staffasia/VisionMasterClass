@@ -20,6 +20,7 @@ class DataController extends Controller {
         $this->loadCourseLevel();
         $this->loadCourse();
         $this->loadSection();
+        $this->loadContent();
 
         return redirect()->back();
 
@@ -145,6 +146,64 @@ class DataController extends Controller {
                         'created_at' => date('Y-m-d H:i:s'),
                         'updated_at' => date('Y-m-d H:i:s'),
                     ]);
+
+                }
+
+            }
+
+        }
+
+
+
+    }
+
+
+    private function loadContent() {
+
+        $count = DB::table('lecture_contents')->count();
+
+        $video_url = 'https://youtu.be/My7hjBp4wH0';
+        $files_url = 'demo_content.pdf';
+
+        if ($count == 0) {
+
+            $sections = DB::table('sections')->get();
+
+            foreach ($sections as $section) {
+
+                $max_content_count = rand(1, 5);
+
+                for($i=0; $i<$max_content_count; $i++) {
+
+                    if (($i+1)%3 == 0) {
+
+                        DB::table('lecture_contents')->insert([
+                            'section_id' =>  $section->section_id,
+                            'course_id' =>  $section->course_id,
+                            'content_title' =>  'Demo Content ' . ($i+1),
+                            'content' =>  $files_url,
+                            'mime_type' =>  'files/pdf',
+                            'created_at' => date('Y-m-d H:i:s'),
+                            'updated_at' => date('Y-m-d H:i:s'),
+                        ]);
+
+                    }
+
+                    else {
+
+                        DB::table('lecture_contents')->insert([
+                            'section_id' =>  $section->section_id,
+                            'course_id' =>  $section->course_id,
+                            'content_title' =>  'Demo Content ' . ($i+1),
+                            'content' =>  $video_url,
+                            'mime_type' =>  'video/youtube',
+                            'created_at' => date('Y-m-d H:i:s'),
+                            'updated_at' => date('Y-m-d H:i:s'),
+                        ]);
+
+                    }
+
+
 
                 }
 

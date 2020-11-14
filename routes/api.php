@@ -31,6 +31,8 @@ Route::get('/category/{id}', 'API\CourseController@courseCategory');
 Route::get('/all-levels', 'API\CourseController@allLevels');
 Route::get('/level/{id}', 'API\CourseController@courseLevel');
 
+Route::get('/search/{key}', 'API\CourseController@search');
+
 
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {

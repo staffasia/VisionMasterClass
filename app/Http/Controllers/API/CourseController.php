@@ -39,11 +39,31 @@ class CourseController extends Controller {
             ->where('course_id', $course_id)
             ->get();
 
+        $section_data = [];
+
+
+        foreach($sections as $section) {
+
+            $contents = DB::table('lecture_contents')
+                ->where('lecture_contents.section_id', $section->section_id)
+                ->get();
+
+
+            $section_object = [
+                "section_id" => $section->section_id,
+                "section_name" => $section->section_name,
+                "section_items" => $contents,
+            ];
+
+            array_push($section_data, $section_object);
+
+        }
+
 
         return response([
             'status' => 'success',
             'course' => $course,
-            'sections' => $sections,
+            'sections' => $section_data,
         ]);
 
     }
@@ -83,15 +103,6 @@ class CourseController extends Controller {
                 "course_count" => $category->course_count,
                 "course_data" => $courses,
             ];
-
-            //$count_array = array('course_count' => $category->course_count);
-            //$category_array = array('category_data' => $category_object);
-            //$course_array = array('course_data' => $courses);
-            //$data = $count_array + $category_array + $course_array;
-            //$data = $count_array + $category_array + $course_array;
-
-            //array_push($category_object, $category);
-            //array_push($category_object, $courses);
 
             array_push($category_wise_course, $category_object);
 
@@ -232,6 +243,49 @@ class CourseController extends Controller {
         return response([
             'status' => 'success',
             'courses' => $courses,
+        ]);
+
+    }
+
+
+    public function search($key) {
+
+        $courses = DB::table('courses')
+            ->select('courses.*', 'users.first_name as instructor')
+            ->where('courses.course_name', 'LIKE', "%{$key}%")
+            ->join('users', 'users.id', 'courses.instructor_id')
+            ->get();
+
+
+        $categories = DB::table('course_categories')
+            ->where('category_name', 'LIKE', "%{$key}%")
+            ->get();
+
+
+        $tutors = DB::table('users')
+            ->where('first_name', 'LIKE', "%{$key}%")
+            ->orWhere('last_name', 'LIKE', "%{$key}%")
+            ->get();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        return response([
+            'status' => 'success',
+            'course_data' => $courses,
+            'categories' => $categories,
+            'tutors' => $tutors,
         ]);
 
     }
