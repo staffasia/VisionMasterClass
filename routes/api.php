@@ -33,6 +33,8 @@ Route::get('/level/{id}', 'API\CourseController@courseLevel');
 
 Route::get('/search/{key}', 'API\CourseController@search');
 
+Route::post('/course-enrollment', 'API\CourseController@courseEnrollment');
+
 
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {

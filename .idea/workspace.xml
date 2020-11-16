@@ -4,7 +4,6 @@
     <list default="true" id="0f73176d-0ba3-44a3-b121-c80f326633a7" name="Default Changelist" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/API/CourseController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/CourseController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/DataController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/DataController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/api.php" afterPath="$PROJECT_DIR$/routes/api.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -67,35 +66,81 @@
       <file leaf-file-name="api.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="781">
-              <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+            <state relative-caret-position="651">
+              <caret line="35" column="72" lean-forward="false" selection-start-line="35" selection-start-column="56" selection-end-line="35" selection-end-column="72" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CourseController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/API/CourseController.php">
+      <file leaf-file-name="UserController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/API/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="823">
-              <caret line="293" column="0" lean-forward="false" selection-start-line="293" selection-start-column="0" selection-end-line="293" selection-end-column="0" />
+            <state relative-caret-position="676">
+              <caret line="68" column="33" lean-forward="true" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="33" />
               <folding>
-                <element signature="e#170#507#0#PHP" expanded="false" />
-                <element signature="e#3303#6178#0#PHP" expanded="false" />
-                <element signature="e#3696#5254#0#PHP" expanded="false" />
-                <element signature="e#6185#6600#0#PHP" expanded="false" />
-                <element signature="e#6607#6857#0#PHP" expanded="false" />
-                <element signature="e#6864#7267#0#PHP" expanded="false" />
+                <element signature="e#44#80#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CourseController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/API/CourseController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="672">
+              <caret line="313" column="0" lean-forward="true" selection-start-line="313" selection-start-column="0" selection-end-line="313" selection-end-column="0" />
+              <folding>
+                <element signature="e#44#80#0#PHP" expanded="true" />
+                <element signature="e#216#553#0#PHP" expanded="false" />
+                <element signature="e#560#1615#0#PHP" expanded="false" />
+                <element signature="e#1622#3342#0#PHP" expanded="false" />
+                <element signature="e#3349#6224#0#PHP" expanded="false" />
+                <element signature="e#3742#5300#0#PHP" expanded="false" />
+                <element signature="e#6231#6646#0#PHP" expanded="false" />
+                <element signature="e#6653#6903#0#PHP" expanded="false" />
+                <element signature="e#6910#7313#0#PHP" expanded="false" />
+                <element signature="e#7320#8118#0#PHP" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2020_09_30_141705_course_student.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2020_09_30_141705_course_student.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="17" column="42" lean-forward="false" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CourseStudent.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Models/CourseStudent.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Course.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Models/Course.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="31" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DataController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="175" column="47" lean-forward="false" selection-start-line="175" selection-start-column="29" selection-end-line="175" selection-end-column="47" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
                 <element signature="e#478#1085#0#PHP" expanded="false" />
                 <element signature="e#1092#1590#0#PHP" expanded="false" />
@@ -144,8 +189,9 @@
         <option value="$PROJECT_DIR$/database/migrations/2020_11_09_092551_lecture_contents.php" />
         <option value="$PROJECT_DIR$/app/Models/Content.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/DataController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/API/CourseController.php" />
         <option value="$PROJECT_DIR$/routes/api.php" />
+        <option value="$PROJECT_DIR$/app/Models/CourseStudent.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/API/CourseController.php" />
       </list>
     </option>
   </component>
@@ -321,6 +367,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -333,10 +381,40 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vision-mc-backend-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vision-mc-backend-master" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vision-mc-backend-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vision-mc-backend-master" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Models" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -448,17 +526,20 @@
       <workItem from="1604913616691" duration="7081000" />
       <workItem from="1605329905809" duration="1189000" />
       <workItem from="1605333649296" duration="134000" />
+      <workItem from="1605338893164" duration="192000" />
+      <workItem from="1605420569989" duration="513000" />
+      <workItem from="1605497508712" duration="3478000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39869000" />
+    <option name="totallyTimeSpent" value="44052000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="1" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2563966" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -491,33 +572,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/API/CourseController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="e#170#507#0#PHP" expanded="false" />
-            <element signature="e#3303#6178#0#PHP" expanded="false" />
-            <element signature="e#3696#5254#0#PHP" expanded="false" />
-            <element signature="e#6185#6600#0#PHP" expanded="false" />
-            <element signature="e#6607#6857#0#PHP" expanded="false" />
-            <element signature="e#6864#7267#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DataController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#478#1085#0#PHP" expanded="false" />
-            <element signature="e#1092#1590#0#PHP" expanded="false" />
-            <element signature="e#1597#5255#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Models/Section.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -656,13 +710,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Course.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="26" column="51" lean-forward="false" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/master-class/course/add-category.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -775,13 +822,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/API/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="73" column="68" lean-forward="true" selection-start-line="73" selection-start-column="68" selection-end-line="73" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2020_09_30_141853_sections.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -810,47 +850,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/API/CourseController.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_11_09_092551_lecture_contents.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="823">
-          <caret line="293" column="0" lean-forward="false" selection-start-line="293" selection-start-column="0" selection-end-line="293" selection-end-column="0" />
+        <state relative-caret-position="294">
+          <caret line="14" column="39" lean-forward="false" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DataController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#170#507#0#PHP" expanded="false" />
-            <element signature="e#3303#6178#0#PHP" expanded="false" />
-            <element signature="e#3696#5254#0#PHP" expanded="false" />
-            <element signature="e#6185#6600#0#PHP" expanded="false" />
-            <element signature="e#6607#6857#0#PHP" expanded="false" />
-            <element signature="e#6864#7267#0#PHP" expanded="false" />
+            <element signature="e#478#1085#0#PHP" expanded="false" />
+            <element signature="e#1092#1590#0#PHP" expanded="false" />
+            <element signature="e#1597#5255#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/api.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="781">
-          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+        <state relative-caret-position="651">
+          <caret line="35" column="72" lean-forward="false" selection-start-line="35" selection-start-column="56" selection-end-line="35" selection-end-column="72" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_11_09_092551_lecture_contents.php">
+    <entry file="file://$PROJECT_DIR$/app/Models/Course.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="39" lean-forward="false" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="39" />
+        <state relative-caret-position="210">
+          <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="31" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/CourseStudent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_09_30_141705_course_student.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="17" column="42" lean-forward="false" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/API/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="676">
+          <caret line="68" column="33" lean-forward="true" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="33" />
           <folding>
-            <element signature="e#7#45#0#PHP" expanded="true" />
+            <element signature="e#44#80#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DataController.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/API/CourseController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="175" column="47" lean-forward="false" selection-start-line="175" selection-start-column="29" selection-end-line="175" selection-end-column="47" />
+        <state relative-caret-position="672">
+          <caret line="313" column="0" lean-forward="true" selection-start-line="313" selection-start-column="0" selection-end-line="313" selection-end-column="0" />
           <folding>
-            <element signature="e#478#1085#0#PHP" expanded="false" />
-            <element signature="e#1092#1590#0#PHP" expanded="false" />
-            <element signature="e#1597#5255#0#PHP" expanded="false" />
+            <element signature="e#44#80#0#PHP" expanded="true" />
+            <element signature="e#216#553#0#PHP" expanded="false" />
+            <element signature="e#560#1615#0#PHP" expanded="false" />
+            <element signature="e#1622#3342#0#PHP" expanded="false" />
+            <element signature="e#3349#6224#0#PHP" expanded="false" />
+            <element signature="e#3742#5300#0#PHP" expanded="false" />
+            <element signature="e#6231#6646#0#PHP" expanded="false" />
+            <element signature="e#6653#6903#0#PHP" expanded="false" />
+            <element signature="e#6910#7313#0#PHP" expanded="false" />
+            <element signature="e#7320#8118#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>

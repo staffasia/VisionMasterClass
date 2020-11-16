@@ -5,6 +5,9 @@ namespace App\Http\Controllers\API;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use DB;
+use Validator;
+
+use App\Models\CourseStudent;
 
 
 class CourseController extends Controller {
@@ -288,6 +291,30 @@ class CourseController extends Controller {
             'tutors' => $tutors,
         ]);
 
+    }
+
+
+    public function courseEnrollment(Request $request) {
+
+        /*
+         * Validating Information
+         */
+
+        $validator = Validator::make($request->all(), [
+            'user_id' => 'required',
+            'course_id' => 'required',
+        ]);
+
+        $input = $request->all();
+
+
+        $enrollment = CourseStudent::firstOrNew(array('course_id' => $input['course_id'], 'student_id'=>$input['student_id']));
+        $enrollment->save();
+
+
+        return response([
+            'status' => 'success',
+        ]);
     }
 
 }
