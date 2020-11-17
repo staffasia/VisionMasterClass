@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use DB;
 use Validator;
 
+use App\Models\Course;
 use App\Models\CourseStudent;
 
 
@@ -315,6 +316,48 @@ class CourseController extends Controller {
         return response([
             'status' => 'success',
         ]);
+    }
+
+
+
+    public function createCourse(Request $request) {
+
+        $validator = Validator::make($request->all(),
+            [
+                'instructor_id' => 'required',
+                'category_id' => 'required',
+                'level_id' => 'required',
+                'course_name' => 'required',
+                'free_course' => 'required',
+                'price' => 'required',
+                'discount_available' => 'required',
+                'discount' => 'required',
+                'discount_percentage' => 'required',
+                'discount_amount_type' => 'required',
+                'course_status' => 'required',
+//                'file' => 'required|mimes:doc,docx,pdf,txt|max:2048',
+            ]);
+
+        if ($validator->fails()) {
+            return response()->json(['error'=>$validator->errors()], 401);
+        }
+
+
+        $course_data = $request->all();
+
+        if ($files = $request->file('course_image')) {
+            $file = $request->file->store('public/images/courses');
+            $course_data['course_image'] = $file;
+        }
+
+        $course = Course::create($course_data);
+
+
+        return response()->json([
+            'status' => 'success',
+            'course_id' => $course->course_id
+        ]);
+
     }
 
 }
