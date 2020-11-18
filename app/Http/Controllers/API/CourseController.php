@@ -7,12 +7,12 @@ use Illuminate\Http\Request;
 use DB;
 use Validator;
 
+use App\Models\User;
 use App\Models\Course;
 use App\Models\CourseStudent;
 
 
 class CourseController extends Controller {
-
 
     public function index() {
 
@@ -266,23 +266,9 @@ class CourseController extends Controller {
             ->get();
 
 
-        $tutors = DB::table('users')
-            ->where('first_name', 'LIKE', "%{$key}%")
+        $tutors = User::where('first_name', 'LIKE', "%{$key}%")
             ->orWhere('last_name', 'LIKE', "%{$key}%")
             ->get();
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         return response([
@@ -317,7 +303,6 @@ class CourseController extends Controller {
             'status' => 'success',
         ]);
     }
-
 
 
     public function createCourse(Request $request) {

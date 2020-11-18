@@ -34,6 +34,7 @@ Route::get('/all-levels', 'API\CourseController@allLevels');
 Route::get('/level/{id}', 'API\CourseController@courseLevel');
 
 Route::get('/search/{key}', 'API\CourseController@search');
+Route::post('/course-enrollment', 'API\CourseController@courseEnrollment');
 
 
 
