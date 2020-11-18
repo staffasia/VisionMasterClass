@@ -17,7 +17,8 @@ class CourseController extends Controller {
     public function index() {
 
         $courses = DB::table('courses')
-            ->select('courses.*', 'users.first_name as instructor')
+            ->select('courses.*', 'users.first_name as instructor'
+                , DB::raw("(SELECT COUNT(id) FROM course_student WHERE course_id=courses.course_id) as student_count"))
             ->join('users', 'users.id', 'courses.instructor_id')
             ->get();
 
@@ -33,7 +34,8 @@ class CourseController extends Controller {
     public function course($course_id) {
 
         $course = DB::table('courses')
-            ->select('courses.*', 'users.first_name as instructor')
+            ->select('courses.*', 'users.first_name as instructor'
+                , DB::raw("(SELECT COUNT(id) FROM course_student WHERE course_id=courses.course_id) as student_count"))
             ->where('courses.course_id', $course_id)
             ->join('users', 'users.id', 'courses.instructor_id')
             ->first();
@@ -76,7 +78,8 @@ class CourseController extends Controller {
     public function getCourseByInstructor($instructor_id) {
 
         $courses = DB::table('courses')
-            ->select('courses.*', 'users.first_name as instructor')
+            ->select('courses.*', 'users.first_name as instructor'
+                , DB::raw("(SELECT COUNT(id) FROM course_student WHERE course_id=courses.course_id) as student_count"))
             ->where('courses.instructor_id', $instructor_id)
             ->join('users', 'users.id', 'courses.instructor_id')
             ->get();
@@ -103,7 +106,8 @@ class CourseController extends Controller {
         foreach($categories as $category) {
 
             $courses = DB::table('courses')
-                ->select('course_categories.category_name', 'courses.*', 'users.first_name as instructor')
+                ->select('course_categories.category_name', 'courses.*', 'users.first_name as instructor'
+                    , DB::raw("(SELECT COUNT(id) FROM course_student WHERE course_id=courses.course_id) as student_count"))
                 ->where('courses.category_id', $category->category_id)
                 ->join('users', 'users.id', 'courses.instructor_id')
                 ->join('course_categories', 'course_categories.category_id', 'courses.category_id')
@@ -154,15 +158,14 @@ class CourseController extends Controller {
         foreach($categories as $category) {
 
             $courses = DB::table('courses')
-                ->select('course_categories.category_name', 'courses.*', 'users.first_name as instructor')
+                ->select('course_categories.category_name', 'courses.*', 'users.first_name as instructor'
+                    , DB::raw("(SELECT COUNT(id) FROM course_student WHERE course_id=courses.course_id) as student_count"))
                 ->where('courses.category_id', $category->category_id)
                 ->join('users', 'users.id', 'courses.instructor_id')
                 ->join('course_categories', 'course_categories.category_id', 'courses.category_id')
                 ->limit(10)
                 ->get();
 
-
-            //$category_name = $category->category;
 
             $category_object = [
                 "category_id" => $category->category_id,
@@ -175,22 +178,14 @@ class CourseController extends Controller {
                 "course_data" => $courses,
             ];
 
-            //$count_array = array('course_count' => $category->course_count);
-            //$category_array = array('category_data' => $category_object);
-            //$course_array = array('course_data' => $courses);
-            //$data = $count_array + $category_array + $course_array;
-            //$data = $count_array + $category_array + $course_array;
-
-            //array_push($category_object, $category);
-            //array_push($category_object, $courses);
-
             array_push($category_wise_course, $category_object);
 
         }
 
 
         $latest_courses = DB::table('courses')
-            ->select('course_categories.category_name', 'courses.*', 'users.first_name as instructor')
+            ->select('course_categories.category_name', 'courses.*', 'users.first_name as instructor'
+                , DB::raw("(SELECT COUNT(id) FROM course_student WHERE course_id=courses.course_id) as student_count"))
             ->join('users', 'users.id', 'courses.instructor_id')
             ->join('course_categories', 'course_categories.category_id', 'courses.category_id')
             ->orderBy('courses.created_at', 'desc')
@@ -209,7 +204,6 @@ class CourseController extends Controller {
 
         return response([
             'status' => 'success',
-            //'categories' => $categories,
             'course_image_path' => $course_image_path,
             'categories' => $category_wise_course,
             'latest_course' => $latest_courses,
@@ -223,7 +217,8 @@ class CourseController extends Controller {
     public function courseCategory($category_id) {
 
         $courses = DB::table('courses')
-            ->select('courses.*', 'users.first_name as instructor')
+            ->select('courses.*', 'users.first_name as instructor'
+                , DB::raw("(SELECT COUNT(id) FROM course_student WHERE course_id=courses.course_id) as student_count"))
             ->where('courses.category_id', $category_id)
             ->join('users', 'users.id', 'courses.instructor_id')
             ->get();
@@ -254,7 +249,8 @@ class CourseController extends Controller {
     public function courseLevel($level_id) {
 
         $courses = DB::table('courses')
-            ->select('courses.*', 'users.first_name as instructor')
+            ->select('courses.*', 'users.first_name as instructor'
+                , DB::raw("(SELECT COUNT(id) FROM course_student WHERE course_id=courses.course_id) as student_count"))
             ->where('courses.level_id', $level_id)
             ->join('users', 'users.id', 'courses.instructor_id')
             ->get();
@@ -271,7 +267,8 @@ class CourseController extends Controller {
     public function search($key) {
 
         $courses = DB::table('courses')
-            ->select('courses.*', 'users.first_name as instructor')
+            ->select('courses.*', 'users.first_name as instructor'
+                , DB::raw("(SELECT COUNT(id) FROM course_student WHERE course_id=courses.course_id) as student_count"))
             ->where('courses.course_name', 'LIKE', "%{$key}%")
             ->join('users', 'users.id', 'courses.instructor_id')
             ->get();
