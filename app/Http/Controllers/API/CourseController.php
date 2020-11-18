@@ -73,6 +73,22 @@ class CourseController extends Controller {
     }
 
 
+    public function getCourseByInstructor($instructor_id) {
+
+        $courses = DB::table('courses')
+            ->select('courses.*', 'users.first_name as instructor')
+            ->where('courses.instructor_id', $instructor_id)
+            ->join('users', 'users.id', 'courses.instructor_id')
+            ->get();
+
+        return response([
+            'status' => 'success',
+            'courses' => $courses,
+        ]);
+
+    }
+
+
     public function allCategories() {
 
         $categories = DB::table('course_categories')
