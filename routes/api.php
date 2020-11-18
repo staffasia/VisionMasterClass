@@ -26,6 +26,8 @@ Route::get('/courses', 'API\CourseController@index');
 Route::get('/course/{id}', 'API\CourseController@course');
 Route::get('/instructor/{id}', 'API\CourseController@getCourseByInstructor');
 
+Route::post('/rating', 'API\RatingController@storeRating');
+
 
 Route::get('/all-categories', 'API\CourseController@allCategories');
 Route::get('/category/{id}', 'API\CourseController@courseCategory');

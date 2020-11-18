@@ -37,6 +37,9 @@ class Courses extends Migration {
             $table->double('discount_percentage')->default(0);
             $table->enum('discount_amount_type', ['cash', 'percentage'])->default('percentage');
 
+            $table->integer('rating')->default(0);
+            $table->integer('rating_count')->default(0);
+
             $table->string('course_image')->default('default_course.jpg');
 
             $table->enum('course_status', ['draft', 'published', 'unpublished'])->default('draft');
