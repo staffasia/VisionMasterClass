@@ -13,7 +13,7 @@ Route::post('register', 'API\UserController@register');
  * Home Routes
  */
 
-Route::get('/home', 'API\CourseController@home');
+Route::get('/home', 'API\CourseController@home')->middleware('auth:sanctum');
 Route::get('/profile/{id}', 'API\ProfileController@index');
 Route::get('/my-courses/{id}', 'API\ProfileController@getMyCourse');
 

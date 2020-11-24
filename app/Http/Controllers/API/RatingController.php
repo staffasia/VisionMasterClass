@@ -24,6 +24,7 @@ class RatingController extends Controller {
             'student_id' => 'required',
             'course_id' => 'required',
             'rating' => 'required',
+            'rating_text' => 'required',
         ]);
 
         if ($validator->fails()) {
@@ -34,16 +35,17 @@ class RatingController extends Controller {
 
         $enrollment = CourseStudent::firstOrNew(array('course_id' => $input['course_id'], 'student_id'=>$input['student_id']));
         $enrollment->is_rated = '1';
+        $enrollment->rating = $input['rating_text'];
         $enrollment->save();
 
 
 
         $course = Course::find($input['course_id']);
 
-        $rating = intval($course->rating) + intval($input['rating']);
+        $rating = floatval($course->rating) + floatval($input['rating']);
         $rating_count = intval($course->rating_count) + 1;
 
-        $div_number = $course->rating_count==0?1:2;
+        $div_number = $course->rating_count==0?1.0:2.0;
 
         $rating = ($rating/$div_number);
 
