@@ -11,6 +11,9 @@ use App\Models\Category;
 use App\Models\Level;
 use App\Models\Course;
 
+ini_set('max_execution_time', -1);
+
+
 class DataController extends Controller {
 
 
@@ -162,8 +165,8 @@ class DataController extends Controller {
 
         $count = DB::table('lecture_contents')->count();
 
-        $video_url = 'https://youtu.be/My7hjBp4wH0';
-        $files_url = 'demo_content.pdf';
+        $video_url = 'demo_video.mp4';
+        $files_url = 'demo_image.jpg';
 
         if ($count == 0) {
 
@@ -182,7 +185,7 @@ class DataController extends Controller {
                             'course_id' =>  $section->course_id,
                             'content_title' =>  'Demo Content ' . ($i+1),
                             'content' =>  $files_url,
-                            'mime_type' =>  'files/pdf',
+                            'mime_type' =>  'image/jpg',
                             'created_at' => date('Y-m-d H:i:s'),
                             'updated_at' => date('Y-m-d H:i:s'),
                         ]);
@@ -196,7 +199,7 @@ class DataController extends Controller {
                             'course_id' =>  $section->course_id,
                             'content_title' =>  'Demo Content ' . ($i+1),
                             'content' =>  $video_url,
-                            'mime_type' =>  'video/youtube',
+                            'mime_type' =>  'video/mp4',
                             'created_at' => date('Y-m-d H:i:s'),
                             'updated_at' => date('Y-m-d H:i:s'),
                         ]);

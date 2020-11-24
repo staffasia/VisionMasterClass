@@ -33,6 +33,9 @@ class CourseController extends Controller {
 
     public function course($course_id) {
 
+        $host = request()->getSchemeAndHttpHost();
+        $content_path = $host . '/course_content/';
+
         $course = DB::table('courses')
             ->select('courses.*', 'users.first_name as instructor'
                 , DB::raw("(SELECT COUNT(id) FROM course_student WHERE course_id=courses.course_id) as student_count"))
@@ -68,6 +71,7 @@ class CourseController extends Controller {
 
         return response([
             'status' => 'success',
+            'content_path' => $content_path,
             'course' => $course,
             'sections' => $section_data,
         ]);

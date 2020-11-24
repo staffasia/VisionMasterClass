@@ -21,6 +21,7 @@ class CourseStudent extends Migration {
             $table->double('completed')->default(0);
             $table->integer('status')->default(0);
             $table->enum('is_rated', [0, 1])->default(0);
+            $table->longText('rating')->nullable();
 
             $table->timestamps();
         });
