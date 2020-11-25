@@ -69,11 +69,18 @@ class CourseController extends Controller {
         }
 
 
+        $reviews = DB::table('course_student')
+            ->select('rating')
+            ->where('course_id', $course_id)
+            ->get();
+
+
         return response([
             'status' => 'success',
             'content_path' => $content_path,
             'course' => $course,
             'sections' => $section_data,
+            'reviews' => $reviews,
         ]);
 
     }

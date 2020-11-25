@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f73176d-0ba3-44a3-b121-c80f326633a7" name="Default Changelist" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/API/CourseController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/CourseController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/api.php" afterPath="$PROJECT_DIR$/routes/api.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -76,23 +74,33 @@
       <file leaf-file-name="CourseController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/API/CourseController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="609">
-              <caret line="380" column="31" lean-forward="false" selection-start-line="380" selection-start-column="21" selection-end-line="380" selection-end-column="31" />
+            <state relative-caret-position="735">
+              <caret line="82" column="13" lean-forward="false" selection-start-line="82" selection-start-column="13" selection-end-line="82" selection-end-column="13" />
               <folding>
                 <element signature="e#44#80#0#PHP" expanded="true" />
                 <element signature="e#259#715#0#PHP" expanded="false" />
-                <element signature="e#722#2045#0#PHP" expanded="false" />
                 <element signature="e#1380#1844#0#PHP" expanded="false" />
-                <element signature="e#2052#2598#0#PHP" expanded="false" />
-                <element signature="e#2605#4448#0#PHP" expanded="false" />
-                <element signature="e#4455#7006#0#PHP" expanded="false" />
-                <element signature="e#7013#7547#0#PHP" expanded="false" />
-                <element signature="e#7554#7804#0#PHP" expanded="false" />
-                <element signature="e#7811#8333#0#PHP" expanded="false" />
-                <element signature="e#8340#9217#0#PHP" expanded="false" />
-                <element signature="e#9224#9754#0#PHP" expanded="false" />
-                <element signature="e#9761#11009#0#PHP" expanded="false" />
+                <element signature="e#2233#2779#0#PHP" expanded="false" />
+                <element signature="e#2786#4629#0#PHP" expanded="false" />
+                <element signature="e#4636#7187#0#PHP" expanded="false" />
+                <element signature="e#7194#7728#0#PHP" expanded="false" />
+                <element signature="e#7735#7985#0#PHP" expanded="false" />
+                <element signature="e#7992#8514#0#PHP" expanded="false" />
+                <element signature="e#8521#9398#0#PHP" expanded="false" />
+                <element signature="e#9405#9935#0#PHP" expanded="false" />
+                <element signature="e#9942#11190#0#PHP" expanded="false" />
+                <element signature="e#11197#11862#0#PHP" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2020_09_30_141705_course_student.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2020_09_30_141705_course_student.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="441">
+              <caret line="23" column="36" lean-forward="false" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="36" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -359,7 +367,25 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="database" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vision-mc-backend-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vision-mc-backend-master" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="database" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrations" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -374,58 +400,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vision-mc-backend-master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vision-mc-backend-master" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controllers" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vision-mc-backend-master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vision-mc-backend-master" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controllers" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="API" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -553,12 +527,12 @@
       <workItem from="1605782047950" duration="594000" />
       <workItem from="1605852985282" duration="5350000" />
       <workItem from="1606231299429" duration="5174000" />
-      <workItem from="1606286258751" duration="460000" />
+      <workItem from="1606286258751" duration="1342000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70081000" />
+    <option name="totallyTimeSpent" value="70963000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
@@ -861,13 +835,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="588">
           <caret line="39" column="27" lean-forward="false" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_09_30_141705_course_student.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="23" column="36" lean-forward="false" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -955,24 +923,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_09_30_141705_course_student.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="23" column="36" lean-forward="false" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/API/CourseController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="380" column="31" lean-forward="false" selection-start-line="380" selection-start-column="21" selection-end-line="380" selection-end-column="31" />
+        <state relative-caret-position="735">
+          <caret line="82" column="13" lean-forward="false" selection-start-line="82" selection-start-column="13" selection-end-line="82" selection-end-column="13" />
           <folding>
             <element signature="e#44#80#0#PHP" expanded="true" />
             <element signature="e#259#715#0#PHP" expanded="false" />
-            <element signature="e#722#2045#0#PHP" expanded="false" />
             <element signature="e#1380#1844#0#PHP" expanded="false" />
-            <element signature="e#2052#2598#0#PHP" expanded="false" />
-            <element signature="e#2605#4448#0#PHP" expanded="false" />
-            <element signature="e#4455#7006#0#PHP" expanded="false" />
-            <element signature="e#7013#7547#0#PHP" expanded="false" />
-            <element signature="e#7554#7804#0#PHP" expanded="false" />
-            <element signature="e#7811#8333#0#PHP" expanded="false" />
-            <element signature="e#8340#9217#0#PHP" expanded="false" />
-            <element signature="e#9224#9754#0#PHP" expanded="false" />
-            <element signature="e#9761#11009#0#PHP" expanded="false" />
+            <element signature="e#2233#2779#0#PHP" expanded="false" />
+            <element signature="e#2786#4629#0#PHP" expanded="false" />
+            <element signature="e#4636#7187#0#PHP" expanded="false" />
+            <element signature="e#7194#7728#0#PHP" expanded="false" />
+            <element signature="e#7735#7985#0#PHP" expanded="false" />
+            <element signature="e#7992#8514#0#PHP" expanded="false" />
+            <element signature="e#8521#9398#0#PHP" expanded="false" />
+            <element signature="e#9405#9935#0#PHP" expanded="false" />
+            <element signature="e#9942#11190#0#PHP" expanded="false" />
+            <element signature="e#11197#11862#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
