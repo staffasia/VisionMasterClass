@@ -362,4 +362,34 @@ class CourseController extends Controller {
 
     }
 
+
+    public function checkEnrollment(Request $request) {
+
+        /*
+         * Validating Information
+         */
+
+        $validator = Validator::make($request->all(), [
+            'student_id' => 'required',
+            'course_id' => 'required',
+        ]);
+
+        $input = $request->all();
+
+        $count = DB::table('course_student')
+            ->where('course_id', $input['course_id'])
+            ->where('student_id', $input['student_id'])
+            ->count();
+
+        $enrollment = true;
+
+        if($count==0) $enrollment = false;
+
+        return response([
+            'status' => 'success',
+            'enrollment' => $enrollment,
+        ]);
+    }
+
+
 }
